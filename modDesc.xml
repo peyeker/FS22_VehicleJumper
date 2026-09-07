@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modDesc descVersion="80">
+    <!-- Identitas MOD -->
+    <name>Vehicle Jumper</name>
+    <description>MOD yang memungkinkan kendaraan melompat, berputar, dan kembali ke posisi awal dengan menu konfigurasi in-game.</description>
+    <version>1.0.0</version>
+    <author>peyeker</author>
+    
+    <!-- Informasi Multiplayer -->
+    <multiplayer supported="false"/>
+    
+    <!-- Game Version -->
+    <gameVersion minVersion="1.0" maxVersion="1.7"/>
+    
+    <!-- Input Bindings -->
+    <inputBindings>
+        <inputBinding action="VEHICLE_JUMPER_JUMP" 
+                      input="KEY_n" 
+                      device="KB_MOUSE_DEFAULT" 
+                      eventId="1"/>
+        <inputBinding action="VEHICLE_JUMPER_MENU" 
+                      input="KEY_lshift KEY_n" 
+                      device="KB_MOUSE_DEFAULT" 
+                      eventId="2"/>
+    </inputBindings>
+    
+    <!-- Extra Source Files -->
+    <extraSourceFiles>
+        <sourceFile filename="src/vehicleJumper.lua"/>
+        <sourceFile filename="src/configManager.lua"/>
+        <sourceFile filename="src/menuUI.lua"/>
+        <sourceFile filename="src/inputHandler.lua"/>
+    </extraSourceFiles>
+    
+    <!-- Store Items (opsional untuk MOD berbayar di modhub) -->
+    <storeItems/>
+    
+    <!-- Placeables (jika ada) -->
+    <placeables/>
+    
+    <!-- Vehicles (jika ada) -->
+    <vehicles/>
+</modDesc>
